@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/geojit_green"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="#1FFF"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="10">
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:id="@+id/holdingCostHeading"
+            style="@style/portfolio_details"
+            android:gravity="left"
+            android:text="@string/portfolio_holding_cost_heading" />
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:id="@+id/holdingCost"
+            style="@style/portfolio_details"
+            android:gravity="right"
+            android:text="215,073" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="10">
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:id="@+id/currentValueHeading"
+            style="@style/portfolio_details"
+            android:gravity="left"
+            android:text="@string/portfolio_current_value_heading" />
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:id="@+id/currentValue"
+            style="@style/portfolio_details"
+            android:gravity="right"
+            android:text="215,073.83" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="#1FFF"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="10">
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:id="@+id/realizedPLHeading"
+            style="@style/portfolio_details"
+            android:gravity="left"
+            android:text="@string/portfolio_realized_pl_heading" />
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:id="@+id/realizedPL"
+            style="@style/portfolio_details"
+            android:gravity="right"
+            android:text="200" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="10">
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:id="@+id/unRealizedPLHeading"
+            style="@style/portfolio_details"
+            android:gravity="left"
+            android:text="@string/portfolio_unrealized_pl_heading" />
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:id="@+id/unRealizedPL"
+            style="@style/portfolio_details"
+            android:gravity="right"
+            android:text="200" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="#1FFF"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="10">
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:id="@+id/dividentHeading"
+            style="@style/portfolio_details"
+            android:gravity="left"
+            android:text="@string/portfolio_divident_heading" />
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:id="@+id/divident"
+            style="@style/portfolio_details"
+            android:gravity="right"
+            android:text="200" />
+
+    </LinearLayout>
+
+</LinearLayout>

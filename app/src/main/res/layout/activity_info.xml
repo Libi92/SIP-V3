@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/geojit_green"
+    android:orientation="vertical"
+    tools:context="com.geojit.libin.sip_v3.InfoActivity">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.geojit.libin.sip_v3.components.SIPTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/manage_task"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="22dp" />
+
+    <com.geojit.libin.sip_v3.components.SIPTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/use_geojit_sip"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="32dp" />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/geojit_green"
+    android:elevation="0dp"
+    android:minHeight="?attr/actionBarSize">
+
+    <ImageView
+        android:id="@+id/imageViewDrawerBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/back"
+        android:visibility="visible" />
+
+    <com.geojit.libin.sip_v3.components.SIPTextView
+        android:id="@+id/toolbarTitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="portfolio_details_font">18dp</dimen>
+    <dimen name="portfolio_details_graph_height">400sp</dimen>
+    <dimen name="fund_details_scheme_name_size">20sp</dimen>
+    <dimen name="fund_details_nav_size">26sp</dimen>
+    <dimen name="fund_details_variation_size">18sp</dimen>
+</resources>

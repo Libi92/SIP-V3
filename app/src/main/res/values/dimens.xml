@@ -1,0 +1,64 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="defaultTextSize">12dp</dimen>
+    <dimen name="defaultTextDistance">5dp</dimen>
+
+    <dimen name="splash_button_height">60dp</dimen>
+    <dimen name="textview_home_font_size">14dp</dimen>
+
+    <dimen name="sip_calculator_graph_amount_size">32sp</dimen>
+    <dimen name="sip_calculator_graph_amount_heading_size">20sp</dimen>
+    <dimen name="sip_calculator_graph_variation_size">18sp</dimen>
+    <dimen name="sip_calculator_graph_risk_size">16sp</dimen>
+    <dimen name="sip_calculator_graph_year_size">20sp</dimen>
+    <dimen name="sip_calculator_graph_investment_size">30sp</dimen>
+    <dimen name="sip_calculator_graph_investment_heading_size">18sp</dimen>
+    <dimen name="sip_calculator_graph_year_heading_size">20sp</dimen>
+
+    <dimen name="fund_scheme_details_font_size">15sp</dimen>
+    <dimen name="fund_details_padding">12dp</dimen>
+
+
+    <dimen name="login_page_button_size">20sp</dimen>
+    <dimen name="login_page_forgot_password_size">16sp</dimen>
+    <dimen name="login_page_register_button_size">20sp</dimen>
+    <dimen name="login_page_skip_button_size">20sp</dimen>
+
+    <dimen name="emi_calculator_monthly_heading_size">20sp</dimen>
+    <dimen name="emi_calculator_monthly_amount_size">40sp</dimen>
+    <dimen name="emi_calculator_graph_goal_amount_size">30sp</dimen>
+    <dimen name="emi_calculator_graph_goal_heading_size">20sp</dimen>
+    <dimen name="emi_text_size">16dp</dimen>
+    <dimen name="fund_details_scheme_name_size">15sp</dimen>
+    <dimen name="fund_details_nav_size">21sp</dimen>
+    <dimen name="fund_details_variation_size">12sp</dimen>
+
+    <dimen name="portfolio_result_header">80sp</dimen>
+    <dimen name="portfolio_nav_heading">18sp</dimen>
+    <dimen name="holding_unit_heading">18sp</dimen>
+    <dimen name="holding_value_heading">18sp</dimen>
+    <dimen name="portfolio_header_height">50sp</dimen>
+    <dimen name="portfolio_scheme_name_font">20sp</dimen>
+    <dimen name="portfolio_fund_type_font">14sp</dimen>
+    <dimen name="portfolio_fund_value_font">20sp</dimen>
+    <dimen name="portfolio_current_holding_cost">25sp</dimen>
+    <dimen name="portfolio_recycler_item_scheme_name_width">200sp</dimen>
+    <dimen name="portfolio_details_graph_height">200sp</dimen>
+
+
+    <integer name="emi_goal_amount_maximum">999</integer>
+    /* Maximum value set to 10c */
+    <integer name="emi_goal_year_maximum">19</integer>
+    /* Maximum value set to 20 */
+    <integer name="emi_growth_maximum">20</integer>
+    /* Maximum value set to 25 */
+
+    <dimen name="graph_height">240dp</dimen>
+    <dimen name="navigation_title">18dp</dimen>
+    <dimen name="menu_text">18sp</dimen>
+
+    <dimen name="portfolio_details_font">14dp</dimen>
+</resources>

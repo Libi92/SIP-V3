@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/geojit_green">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                style="@style/TextSipCalculator"
+                android:text="@string/after_3_year"
+                android:textSize="18dp" />
+
+            <com.geojit.libin.sip_v3.components.RupeesTextView
+                android:id="@+id/textView1YearAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:iconColor="#99FFFFFF"
+                app:text="@string/rs23"
+                app:textColor="@android:color/white"
+                app:textSize="20dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar3Year"
+                style="@style/ProgressBarSIP"
+                android:layout_below="@id/textView1YearAmount"
+                android:progress="20" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                style="@style/TextSipCalculator"
+                android:text="@string/after_5_years"
+
+                android:textSize="18dp" />
+
+            <com.geojit.libin.sip_v3.components.RupeesTextView
+                android:id="@+id/textView3YearAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:iconColor="#99FFFFFF"
+                app:text="@string/rs23"
+                app:textColor="@android:color/white"
+                app:textSize="20dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar5Year"
+                style="@style/ProgressBarSIP"
+                android:layout_below="@id/textView3YearAmount"
+                android:progress="40" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                style="@style/TextSipCalculator"
+                android:text="@string/after_10_years"
+
+                android:textSize="18dp" />
+
+            <com.geojit.libin.sip_v3.components.RupeesTextView
+                android:id="@+id/textView5YearAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:iconColor="#99FFFFFF"
+                app:text="@string/rs23"
+                app:textColor="@android:color/white"
+                app:textSize="20dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar10Year"
+                style="@style/ProgressBarSIP"
+                android:layout_below="@id/textView5YearAmount"
+                android:progress="60"
+                android:secondaryProgress="70" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/monthly_investment"
+                android:textColor="@android:color/white" />
+
+            <com.geojit.libin.sip_v3.components.SIPEditText
+                android:id="@+id/editTextAmount"
+                style="@style/SIPEditText"
+                android:inputType="number"
+                android:text="@string/rs2" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/seekBarAmount"
+            style="@style/SeekBarSIP"
+            android:layout_gravity="center_horizontal"
+            android:max="60"
+            android:progress="4" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/growth_potential"
+                android:textColor="@android:color/white" />
+
+            <com.geojit.libin.sip_v3.components.SIPEditText
+                android:id="@+id/editTextReturnRate"
+                style="@style/SIPEditText"
+                android:inputType="number"
+                android:text="@string/_8_percent" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/seekBarReturnRate"
+            style="@style/SeekBarSIP"
+            android:layout_gravity="center_horizontal"
+            android:max="30"
+            android:progress="8" />
+
+
+    </LinearLayout>
+</ScrollView>

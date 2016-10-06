@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/geojit_green"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/drawer_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/close" />
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="ReSIPe "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/navigation_title"
+            app:font="bold" />
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geoji BNP Paribas"
+            android:textSize="@dimen/navigation_title" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/userOpt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:id="@+id/textViewUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <com.geojit.libin.sip_v3.components.CircularImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/profile_placeholder"
+            app:civ_border_width="2dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/signInOpt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <com.geojit.libin.sip_v3.components.SIPButton
+            android:id="@+id/buttonSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button"
+            android:text="Sign In"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+</LinearLayout>

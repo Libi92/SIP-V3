@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.geojit.libin.sip_v3.components.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:rv_color="@color/rippleGreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1FFF"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewIcon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/sector" />
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:id="@+id/textViewSchemeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:singleLine="false"
+                android:text="Birla Sun Life Mutual Fund"
+                android:textColor="@color/fade_white1"
+                android:textSize="@dimen/portfolio_scheme_name_font"
+                android:textStyle="bold" />
+
+            <!--<com.geojit.libin.sip_v3.components.SIPTextView
+                android:id="@+id/textViewFundType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="Finance"
+                android:textColor="@color/fade_white"
+                android:textSize="@dimen/portfolio_fund_type_font"
+                android:textStyle="bold" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="15">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"></LinearLayout>
+
+            <com.geojit.libin.sip_v3.components.RupeesTextView
+                android:id="@+id/textViewNav"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="4"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textSize="@dimen/portfolio_fund_value_font"
+                android:textStyle="bold"
+                app:iconColor="@color/fade_white1"
+                app:text="20.85"
+                app:textColor="@color/fade_white1"
+                app:textSize="@dimen/portfolio_fund_value_font" />
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:id="@+id/textViewHoldingUnit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="4"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="10"
+                android:textColor="@color/fade_white1"
+                android:textSize="@dimen/portfolio_fund_value_font"
+                android:textStyle="bold" />
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:id="@+id/textViewHoldingValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="4"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="2000"
+                android:textColor="@color/fade_white1"
+                android:textSize="@dimen/portfolio_fund_value_font"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.geojit.libin.sip_v3.components.RippleView>

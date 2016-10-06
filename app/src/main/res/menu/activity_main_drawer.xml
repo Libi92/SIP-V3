@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:title="EMI Calculator" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="SIP Calculator" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="My Portfolio" />
+        <item
+            android:id="@+id/nav_manage"
+            android:title="Top Funds" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:title="Info" />
+        </menu>
+    </item>
+
+</menu>

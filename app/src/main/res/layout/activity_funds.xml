@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.geojit.libin.sip_v3.FundsActivity">
+
+    <!--<include layout="@layout/toolbar" />-->
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChartFund"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+
+    <com.geojit.libin.sip_v3.components.SIPTextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Scheme Name"
+        android:textColor="@color/textDarkBlue"
+        android:textSize="22dp"
+        app:font="bold" />
+
+    <com.geojit.libin.sip_v3.components.SIPTextView
+        android:id="@+id/textViewCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"
+        android:text="Category" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/fund_row_data">
+
+                <com.geojit.libin.sip_v3.components.SIPTextView
+                    style="@style/fund_row_label"
+                    android:text="@string/monthly_amount" />
+
+                <com.geojit.libin.sip_v3.components.SIPTextView
+                    android:id="@+id/textViewMonthlyAmount"
+                    style="@style/fund_row_text"
+                    android:text="2000" />
+            </LinearLayout>
+
+            <View style="@style/ViewDivider" />
+
+            <LinearLayout style="@style/fund_row_data">
+
+                <com.geojit.libin.sip_v3.components.SIPTextView
+                    style="@style/fund_row_label"
+                    android:text="@string/allocation" />
+
+                <com.geojit.libin.sip_v3.components.SIPTextView
+                    android:id="@+id/textViewAllocation"
+                    style="@style/fund_row_text"
+                    android:text="10%" />
+            </LinearLayout>
+
+            <View style="@style/ViewDivider" />
+
+            <RadioGroup
+                android:id="@+id/yearGroupLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    style="@style/RadioButtonYear"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/_3_year" />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    style="@style/RadioButtonYear"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/_5_year" />
+
+                <RadioButton
+                    android:id="@+id/radioButton10"
+                    style="@style/RadioButtonYear"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/_10_year" />
+
+            </RadioGroup>
+
+            <!--<Spinner-->
+            <!--android:id="@+id/spinnerYear"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal" />-->
+
+            <LinearLayout style="@style/fund_row_data">
+
+                <com.geojit.libin.sip_v3.components.SIPTextView
+                    style="@style/fund_row_label"
+                    android:text="@string/invested_amount" />
+
+                <com.geojit.libin.sip_v3.components.SIPTextView
+                    android:id="@+id/textViewInvestedAmount"
+                    style="@style/fund_row_text"
+                    android:text="72000" />
+            </LinearLayout>
+
+            <View style="@style/ViewDivider" />
+
+            <LinearLayout style="@style/fund_row_data">
+
+                <com.geojit.libin.sip_v3.components.SIPTextView
+                    style="@style/fund_row_label"
+                    android:text="@string/current_value" />
+
+                <com.geojit.libin.sip_v3.components.SIPTextView
+                    android:id="@+id/textViewCurrentValue"
+                    style="@style/fund_row_text"
+                    android:text="88910" />
+            </LinearLayout>
+
+            <View style="@style/ViewDivider" />
+
+            <LinearLayout style="@style/fund_row_data">
+
+                <com.geojit.libin.sip_v3.components.SIPTextView
+                    style="@style/fund_row_label"
+                    android:text="@string/xirr" />
+
+                <com.geojit.libin.sip_v3.components.SIPTextView
+                    android:id="@+id/textViewXIRR"
+                    style="@style/fund_row_text"
+                    android:text="14.97%" />
+            </LinearLayout>
+
+            <View style="@style/ViewDivider" />
+
+            <LinearLayout style="@style/fund_row_data">
+
+                <com.geojit.libin.sip_v3.components.SIPTextView
+                    style="@style/fund_row_label"
+                    android:text="@string/cagr" />
+
+                <com.geojit.libin.sip_v3.components.SIPTextView
+                    android:id="@+id/textViewCIGR"
+                    style="@style/fund_row_text"
+                    android:text="15.57%" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,119 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/geojit_green</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextSipCalculator">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="ProgressBarSIP" parent="android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:max">23000000</item>
+        <item name="android:progressDrawable">@drawable/progressbar</item>
+        <item name="android:secondaryProgress">0</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:minHeight">10dp</item>
+        <item name="android:maxHeight">10dp</item>
+    </style>
+
+    <style name="SIPEditText">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/edittext</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_drawable</item>
+        <item name="android:textSize">28dp</item>
+        <item name="android:textAlignment">viewEnd</item>
+    </style>
+
+    <style name="SeekBarSIP">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:progressDrawable">@drawable/seekbar</item>
+        <item name="android:secondaryProgress">0</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:maxHeight">20dp</item>
+        <item name="android:thumb">@mipmap/slider</item>
+        <item name="android:thumbOffset">12dp</item>
+        <item name="android:splitTrack">false</item>
+
+    </style>
+
+    <style name="SignUpButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/rippleGreen</item>
+        <item name="colorButtonNormal">@color/baseGreen</item>
+    </style>
+
+    <style name="ViewDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/lightGray</item>
+        <item name="android:layout_marginLeft">-26dp</item>
+        <item name="android:layout_marginRight">-26dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="fund_row_data">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">@dimen/fund_details_padding</item>
+    </style>
+
+    <style name="fund_row_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="fund_row_text">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="RadioButtonYear">
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/radio_button_year_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/radio_button_text_selector</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edittext_login</item>
+        <item name="textColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:textCursorDrawable">@android:color/white</item>
+    </style>
+
+    <style name="portfolio_details">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/portfolio_details_font</item>
+    </style>
+</resources>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/geojit_green"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".fragments.EMICalculatorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/monthlyHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/emi_calculator_monthly_heading"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/emi_calculator_monthly_heading_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_drawable"
+            android:orientation="vertical">
+
+
+            <com.geojit.libin.sip_v3.components.RupeesTextView
+                android:id="@+id/monthlyInvestmentLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:text="5,000"
+                app:iconColor="@color/fade_white"
+                app:textColor="@android:color/white"
+                app:textSize="@dimen/emi_calculator_monthly_amount_size" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.geojit.libin.sip_v3.components.SIPTextView
+                        android:id="@+id/goalLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="left"
+                        android:text="@string/emi_calculator_goal_heading"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/emi_calculator_graph_goal_heading_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <com.geojit.libin.sip_v3.components.RupeesTextView
+                            android:id="@+id/goalValueLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            app:iconColor="@color/fade_white"
+                            app:text="5,00,000"
+                            app:textColor="@android:color/white"
+                            app:textSize="@dimen/emi_calculator_graph_goal_amount_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/seekBarAmount"
+                    style="@style/SeekBarSIP"
+                    android:layout_marginTop="5dp"
+                    android:max="@integer/emi_goal_amount_maximum"
+                    android:progress="225" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.geojit.libin.sip_v3.components.SIPTextView
+                        android:id="@+id/yearLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="left"
+                        android:text="@string/emi_calculator_year_heading"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/emi_text_size" />
+
+                    <com.geojit.libin.sip_v3.components.SIPTextView
+                        android:id="@+id/goalYearLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="right"
+                        android:text="15"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/emi_text_size" />
+
+
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/seekBarYear"
+                    style="@style/SeekBarSIP"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:max="@integer/emi_goal_year_maximum"
+                    android:progress="3" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.geojit.libin.sip_v3.components.SIPTextView
+                        android:id="@+id/growthLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="left"
+                        android:text="@string/emi_calculator_growth_heading"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/emi_text_size" />
+
+                    <com.geojit.libin.sip_v3.components.SIPTextView
+                        android:id="@+id/growthValueLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="right"
+                        android:text="10%"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/emi_text_size" />
+
+                </LinearLayout>
+
+
+                <SeekBar
+                    android:id="@+id/seekBarGrowth"
+                    style="@style/SeekBarSIP"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:max="@integer/emi_growth_maximum"
+                    android:progress="4" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

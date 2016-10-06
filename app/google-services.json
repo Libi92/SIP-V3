@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1023216429736",
+    "firebase_url": "https://sip-v3.firebaseio.com",
+    "project_id": "sip-v3",
+    "storage_bucket": "sip-v3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023216429736:android:e9a66f0f542c94c0",
+        "android_client_info": {
+          "package_name": "com.geojit.libin.sip_v3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023216429736-qsoq8gnn36bhm4bfqjaqgncm3querlip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.geojit.libin.sip_v3",
+            "certificate_hash": "132B927D7C64981989607CC7C38A91A4BA5BA375"
+          }
+        },
+        {
+          "client_id": "1023216429736-ivf1jpcpem1veqh1g8g5nct9gg3499vd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcLSkt9hI41aFo-2yH6BWqN0vXVfj6wc8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023216429736-ivf1jpcpem1veqh1g8g5nct9gg3499vd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

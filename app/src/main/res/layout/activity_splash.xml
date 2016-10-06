@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:orientation="vertical"
+    tools:context="com.geojit.libin.sip_v3.SplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+        <ImageView
+            android:id="@+id/geojitLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@mipmap/logo" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <com.geojit.libin.sip_v3.components.SIPEditText
+                    android:id="@+id/userNameField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_login"
+                    android:drawableLeft="@mipmap/username"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/username"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textCursorDrawable="@color/fade_white" />
+
+                <com.geojit.libin.sip_v3.components.SIPEditText
+                    android:id="@+id/passwordField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_login"
+                    android:drawableLeft="@mipmap/password"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/password"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textCursorDrawable="@color/fade_white" />
+
+                <com.geojit.libin.sip_v3.components.RippleView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/buttonLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/login_button_drawable"
+                        android:text="@string/login"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/login_page_button_size" />
+                </com.geojit.libin.sip_v3.components.RippleView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <com.geojit.libin.sip_v3.components.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/twitterButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/twitter" />
+                    </com.geojit.libin.sip_v3.components.RippleView>
+
+                    <com.geojit.libin.sip_v3.components.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp">
+
+                        <ImageView
+                            android:id="@+id/facebookButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/facebook" />
+                    </com.geojit.libin.sip_v3.components.RippleView>
+
+                    <com.geojit.libin.sip_v3.components.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp">
+
+                        <ImageView
+                            android:id="@+id/buttonGoogle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/google_plus" />
+                    </com.geojit.libin.sip_v3.components.RippleView>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <com.geojit.libin.sip_v3.components.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="20dp">
+
+                        <com.geojit.libin.sip_v3.components.SIPTextView
+                            android:id="@+id/forgotPassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/forgot_password"
+                            android:textColor="#66ffffff"
+                            android:textSize="@dimen/login_page_forgot_password_size" />
+                    </com.geojit.libin.sip_v3.components.RippleView>
+
+                    <com.geojit.libin.sip_v3.components.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="20dp">
+
+                        <com.geojit.libin.sip_v3.components.SIPTextView
+                            android:id="@+id/registerButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/register"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/login_page_register_button_size" />
+
+                    </com.geojit.libin.sip_v3.components.RippleView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.geojit.libin.sip_v3.components.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp">
+
+                        <com.geojit.libin.sip_v3.components.SIPTextView
+                            android:id="@+id/buttonSkip"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@mipmap/skip"
+                            android:text="@string/skip_caps"
+                            android:textColor="#66ffffff"
+                            android:textSize="@dimen/login_page_skip_button_size" />
+
+                    </com.geojit.libin.sip_v3.components.RippleView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/gtl_logo"
+                        android:alpha="0.6"
+                        android:layout_gravity="center"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

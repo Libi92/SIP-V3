@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.geojit.libin.sip_v3.components.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:rv_color="@color/rippleGreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1FFF"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/sector" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:id="@+id/textViewSchemeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="Birla Sun Life Mutual Fund"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:id="@+id/textViewType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Featured"
+                android:textColor="@android:color/white"
+                android:textSize="11dp"
+                app:font="light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.geojit.libin.sip_v3.components.RupeesTextView
+                android:id="@+id/textViewNAV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:iconColor="@android:color/white"
+                app:text="20.85"
+                app:textColor="@android:color/white"
+                app:textSize="16dp" />
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:id="@+id/textViewGrowth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+5.95 (1.23%)"
+                android:textColor="@android:color/white"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.geojit.libin.sip_v3.components.RippleView>

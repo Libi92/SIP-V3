@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/geojit_green">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fundTypeLabel"
+            android:text="@string/fund_type"
+            android:textSize="@dimen/fund_scheme_details_font_size"
+            android:textColor="@android:color/white"/>
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/investmentPlanLabel"
+            android:text="@string/investment_Plan"
+            android:textSize="@dimen/fund_scheme_details_font_size"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"/>
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/launchDateLabel"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/fund_scheme_details_font_size"
+            android:text="@string/launch_Date"
+            android:textColor="@android:color/white"/>
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/benchmarkLabel"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/fund_scheme_details_font_size"
+            android:text="@string/benchmark"
+            android:textColor="@android:color/white"/>
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/assetSizeLabel"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/fund_scheme_details_font_size"
+            android:text="@string/asset_size"
+            android:textColor="@android:color/white"/>
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/minimumInvestmentLabel"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/fund_scheme_details_font_size"
+            android:text="@string/minimum_investment"
+            android:textColor="@android:color/white"/>
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastDividentLabel"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/fund_scheme_details_font_size"
+            android:text="@string/last_divident"
+            android:textColor="@android:color/white"/>
+
+        <com.geojit.libin.sip_v3.components.SIPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bonusLabel"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/fund_scheme_details_font_size"
+            android:text="@string/bonus"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fundType"
+                android:textSize="@dimen/fund_scheme_details_font_size"
+                android:text="Open-Ended"
+                android:textColor="@android:color/white"/>
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/investmentPlan"
+                android:text="Growth"
+                android:textSize="@dimen/fund_scheme_details_font_size"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"/>
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/launchDate"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/fund_scheme_details_font_size"
+                android:text="Aug 30, 2002"
+                android:textColor="@android:color/white"/>
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/benchmark"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/fund_scheme_details_font_size"
+                android:text="S &amp; P BSE 200"
+                android:textColor="@android:color/white"/>
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/assetSize"
+                android:textSize="@dimen/fund_scheme_details_font_size"
+                android:layout_marginTop="20dp"
+                android:text="9,364.34 (Jun-30-2016)"
+                android:textColor="@android:color/white"/>
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/minimumInvestment"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/fund_scheme_details_font_size"
+                android:text="Rs.5000"
+                android:textColor="@android:color/white"/>
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lastDivident"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/fund_scheme_details_font_size"
+                android:text="N.A."
+                android:textColor="@android:color/white"/>
+
+            <com.geojit.libin.sip_v3.components.SIPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bonus"
+                android:textSize="@dimen/fund_scheme_details_font_size"
+                android:layout_marginTop="20dp"
+                android:text="N.A."
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

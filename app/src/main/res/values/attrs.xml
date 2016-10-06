@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SIPTextView">
+        <attr name="font" format="enum">
+            <enum name="light" value="0" />
+            <enum name="regular" value="1" />
+            <enum name="bold" value="2" />
+            <enum name="condensed" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RupeesTextView">
+        <attr name="textColor" format="color" />
+        <attr name="iconColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="textDistance" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer" />
+        <attr name="rv_rippleDuration" format="integer" />
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0" />
+            <enum name="doubleRipple" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+
+    </declare-styleable>
+
+    <declare-styleable name="SIPIconEditText">
+        <attr name="drawableLeft" format="integer" />
+        <attr name="textString" format="string" />
+        <attr name="hint" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="BlurDrawerLayout">
+        <attr name="blurRadius" format="integer" />
+        <attr name="downScaleFactor" format="float" />
+        <attr name="drawerUpImageId" format="reference" />
+        <attr name="openDescription" format="reference" />
+        <attr name="closeDescription" format="reference" />
+        <attr name="toolbar" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularImageView">
+        <attr name="civ_border" format="boolean" />
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_shadow" format="boolean" />
+        <attr name="civ_shadow_color" format="color" />
+        <attr name="civ_shadow_radius" format="float" />
+    </declare-styleable>
+</resources>

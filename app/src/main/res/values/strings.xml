@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">ReSIPe</string>
+    <string name="after_3_year">After 3 Year</string>
+    <string name="rs">\u20B9</string>
+    <string name="rs23">23,000</string>
+    <string name="rs2">\u20B9 2,000</string>
+    <string name="after_5_years">After 5 Years</string>
+    <string name="after_10_years">After 10 Years</string>
+    <string name="monthly_investment">Monthly Investment</string>
+    <string name="_8_percent">8%</string>
+    <string name="growth_potential">Expected Annual Return</string>
+
+    <string name="login">LOGIN</string>
+    <string name="skip">Skip</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="login_with_google">Login with Google+</string>
+    <string name="register">Register</string>
+    <string name="done">DONE</string>
+    <string name="skip_caps">SKIP</string>
+    <string name="manage_task">Manage your investments on the go!</string>
+
+    <string name="emi_calculator_label">EMI Calculator</string>
+    <string name="sip_calculator_label">SIP Calculator</string>
+    <string name="portfolio_label">My Portfolio</string>
+    <string name="choose_fund_label">Choose a Fund</string>
+    <string name="top_funds_label">Top Funds</string>
+    <string name="transaction_label">Transaction</string>
+    <string name="info_label">Info</string>
+    <string name="settings_label">Settings</string>
+
+    <string name="sip_calculator_graph_total_return_heading">Total Return</string>
+    <string name="sip_calculator_graph_invested_amount_heading">Invested Amount</string>
+    <string name="sip_calculator_graph_year_heading">Year</string>
+
+    <string name="category">Category</string>
+    <string name="scheme_name">Scheme Name</string>
+
+    <string name="fund_list">Fund List</string>
+
+    <string name="_3_year">3 year</string>
+    <string name="_5_year">5 year</string>
+    <string name="_10_year">10 year</string>
+
+    <string name="monthly_amount">Monthly Amount</string>
+    <string name="allocation">Allocation</string>
+    <string name="invested_amount">Invested Amount</string>
+    <string name="current_value">Current Value</string>
+    <string name="xirr">XIRR</string>
+    <string name="cagr">CAGR</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="conservative">Conservative</string>
+    <string name="moderate">Moderate</string>
+    <string name="aggressive">Aggressive</string>
+    <string name="very_aggressive">Very Aggressive</string>
+    <string name="forgot_password">Forgot Password</string>
+
+    <string name="emi_calculator_monthly_heading">Monthly</string>
+    <string name="emi_calculator_goal_heading">Goal</string>
+    <string name="emi_calculator_year_heading">Year</string>
+    <string name="emi_calculator_growth_heading">Interest Rate</string>
+
+
+    <string name="fund_type">Fund Type:</string>
+    <string name="investment_Plan">Investment Plan:</string>
+    <string name="launch_Date">Launch Date:</string>
+    <string name="benchmark">Benchmark:</string>
+    <string name="asset_size">Asset Size (Rs cr):</string>
+    <string name="minimum_investment">Minimum Investment:</string>
+    <string name="last_divident">Last Dividend:</string>
+    <string name="bonus">Bonus:</string>
+    <string name="use_geojit_sip">use Geojit SIP</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="save">Save</string>
+
+    <string name="navHeading">NAV</string>
+    <string name="holdingUnitHeading">Holding Unit</string>
+    <string name="holdingValueHeading">Holding Value</string>
+    <string name="my_portfolio">My Portfolio</string>
+    <string name="portfolio_holding_cost_heading">Holding Cost</string>
+    <string name="portfolio_current_value_heading">Current Value</string>
+    <string name="portfolio_realized_pl_heading">Realized P &amp; L</string>
+    <string name="portfolio_unrealized_pl_heading">Unrealized P &amp; L</string>
+    <string name="portfolio_divident_heading">Divident</string>
+    <string name="portfolio_current_holding_cost">CURRENT HOLDING COST</string>
+    <string name="portfolio_current_holding_value">HOLDING VALUE</string>
+    <array name="menu">
+        <item>EMI Calculator</item>
+        <item>SIP Calculator</item>
+        <item>My Portfolio</item>
+        <item>Top Funds</item>
+        <item>Choose a Fund</item>
+        <item>Transaction</item>
+        <item>Info</item>
+        <item>Settings</item>
+    </array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
